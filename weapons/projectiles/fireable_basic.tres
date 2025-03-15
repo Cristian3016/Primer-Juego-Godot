@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Fireable" load_steps=5 format=3 uid="uid://ccbgm8ehpi6u8"]
+
+[ext_resource type="Texture2D" uid="uid://bjb2a70cv7o8a" path="res://art/kenny_1_bit_platformer/monochrome_tilemap_transparent_packed.png" id="1_0vyip"]
+[ext_resource type="PackedScene" uid="uid://dw7ts4s1usvlf" path="res://weapons/projectiles/basic_projectile.tscn" id="2_ammwd"]
+[ext_resource type="Script" path="res://weapons/projectiles/fireable.gd" id="2_oxud6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hogpv"]
+atlas = ExtResource("1_0vyip")
+region = Rect2(16, 16, 16, 16)
+
+[resource]
+script = ExtResource("2_oxud6")
+display_name = &"Basic"
+icon = SubResource("AtlasTexture_hogpv")
+scene = ExtResource("2_ammwd")
