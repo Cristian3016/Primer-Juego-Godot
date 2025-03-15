@@ -23,7 +23,7 @@ func _shoot():
 	projectiles_parent.add_child(projectile)
 	projectile.name = fireable.display_name
 	projectile.global_position = global_position
-	var launch_direction = default_direction.rotated(global_rotation)
+	var launch_direction = -default_direction.rotated(global_rotation)
 	projectile.launch(launch_direction)
 
 	
